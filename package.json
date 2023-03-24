@@ -6,12 +6,21 @@
     "build": "vite build"
   },
   "dependencies": {
-    "ksr-serve": "^2.0.5",
     "lodash": "^4.17.21",
     "vue": "^3.0.4"
   },
   "devDependencies": {
     "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4"
+    "@vue/compiler-sfc": "^3.0.4",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,vue,css,scss,sass,less,md}": [
+      "prettier --write"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
   }
 }
