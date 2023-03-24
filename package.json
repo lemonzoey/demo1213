@@ -3,17 +3,20 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "lodash": "^4.17.21",
+    "npm": "^7.24.2",
     "vue": "^3.0.4"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
     "@vue/compiler-sfc": "^3.0.4",
+    "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "vite": "^1.0.0-rc.13"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,vue,css,scss,sass,less,md}": [
